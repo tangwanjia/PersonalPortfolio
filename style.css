@@ -62,7 +62,7 @@ body::before {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--white-black);
+    background-color: var(--green-yellow);
     z-index: -1;
     /*overlap*/
     opacity: 0.12;
@@ -102,6 +102,7 @@ section {
     border-radius: 30px;
     backdrop-filter: var(--backdrop-filter-blur);
     display: none;
+    
 }
 
 section.active{
@@ -112,7 +113,8 @@ section.fade-out{
     animation: fadeOut 0.5s ease-in-out forwards;
 }
 .main {
-    max-width: 1200px;
+   
+    max-width: 1700px;
     margin: auto;
     transition: all 0.3s ease-in-out;
     position: relative;
@@ -122,7 +124,7 @@ section.fade-out{
     opacity: 0;
 }
 .container {
-
+   
     padding: 0 40px;
     width: 100%;
 }
@@ -159,7 +161,7 @@ section.fade-out{
     padding: 0 15px;
     width: 100%;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .section-title h2 {
@@ -197,7 +199,7 @@ button {
     font-weight: 500;
     text-transform: capitalize;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 21px;
     cursor: pointer;
     user-select: none;
     position: relative;
@@ -527,18 +529,19 @@ button {
 
 /* Home section */
 .home-section {
+    
     padding: 120px 0;
 }
 .home-section.active{
     display: flex;
 }
+
 .home-text,
 .home-img {
     width: 50%;
-    padding: 15px;
- 
+    padding: 200px;
+   /*首页文字和图片位置的调节*/
 }
-
 .home-text p {
     font-size: 18px;
 }
@@ -559,13 +562,8 @@ button {
     margin: 0 15px 15px 0;
 }
 
-.home-img {
-    align-items: center;
-    justify-items: center;
-}
-
 .home-img .img-box {
-    max-width: 360px;
+    max-width: 500vh;
     background-color: var(--white-alpha-60);
     border-radius: 50%;
     border: 8px solid var(--white-alpha-60);
@@ -580,6 +578,7 @@ button {
     width: 100%;
     border-radius: 50%;
 }
+
 
 
 /*About Section*/
@@ -860,20 +859,20 @@ button {
 }
 
 /*Contact Me*/
-.contact-form{
-   
-}
+
 .contact-info{
     
 }
 .contact-form,
 .contact-info{
+   
     width:50%;
-    padding: 0 15px;
+    padding: 30px 15px;
 }
 .contact-form .input-group{
+   
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 42px;
 }
 .contact-form .input-control::placeholder{
     color:var(--blue-dark);
@@ -888,7 +887,7 @@ button {
     border: none;
     font-family: inherit;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 25px;
     background-color: var(--white-alpha-60);
     padding: 0 20px;
     color: var(--blue-dark);
@@ -906,9 +905,10 @@ button {
 .contact-info-item{
     margin: 0 0 30px;
     padding: 0 0 0 20px;
+    font-size: 25px;
 }
 .contact-info-item h3{
-    font-size: 20px;
+    font-size: 28px;
     text-transform: capitalize;
     margin: 0 0 5px;
 }
