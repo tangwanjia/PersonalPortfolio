@@ -48,7 +48,7 @@ body {
     line-height: 1.5;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
-    padding: 35px 15px;
+    padding: 5vh 15px;  /*总的背景的设置*/
     /*模糊框架的设置*/
 }
 body.hide-scrolling{
@@ -65,7 +65,7 @@ body::before {
     background-color: var(--white-black);
     z-index: -1;
     /*overlap*/
-    opacity: 0.5;
+    opacity: 0.12;
 }
 
 a {
@@ -93,12 +93,15 @@ ul{
     list-style: none;
 }
 
+/*总体框架背景的设置*/
 section {
+    
     background-color: var(--white-alpha-60);
     border: 1px solid var(--white-alpha-40);
-    min-height: calc(100vh -70px);
+    min-height: 90vh;
     border-radius: 30px;
     backdrop-filter: var(--backdrop-filter-blur);
+    display: none;
 }
 
 section.active{
@@ -142,9 +145,8 @@ section.fade-out{
 }
 
 .flex-end{
-    justify-content: flex-end;
+    justify-content: flex-end;  /*顶部按钮移到右边*/
 }
-
 
 .home-section {
     background-color: #5fa6c3;
@@ -525,7 +527,6 @@ button {
 
 /* Home section */
 .home-section {
-   
     padding: 120px 0;
 }
 .home-section.active{
@@ -534,7 +535,8 @@ button {
 .home-text,
 .home-img {
     width: 50%;
-    padding: 10%;
+    padding: 15px;
+ 
 }
 
 .home-text p {
